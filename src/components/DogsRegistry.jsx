@@ -1,7 +1,15 @@
 import { Link } from "react-router-dom";
+import DogsGrid from "./DogsGrid";
 
 
-const DogsRegistry = ()=>{
+const DogsRegistry = (props)=>{
+    /* const [grid, setGrid] = useState(null);
+
+    const dogsGrid =  ()=>(
+        grid.forEach( item =>{
+            <DogsGrid dogs={item}>{item.name}</DogsGrid>
+        })
+    );  */
 
     return(
         <div>
@@ -14,6 +22,7 @@ const DogsRegistry = ()=>{
             </section>
             <div>
                 div All the dogs in miniature
+                <DogsGrid data={props.data}/>
             </div>
 
         </div>
@@ -22,4 +31,4 @@ const DogsRegistry = ()=>{
     );
 }
 
-export default DogsRegistry
+export default DogsRegistry;
