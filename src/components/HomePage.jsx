@@ -24,7 +24,7 @@ const HomePage = (props)=>{
             </section>
             <DogCard dog={props.sample} />
             <footer>
-                footersome links to go back somewhere
+                footer some links to go back somewhere
             </footer>
 
         </div>

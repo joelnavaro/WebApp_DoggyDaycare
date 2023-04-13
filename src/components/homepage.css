@@ -1,5 +1,12 @@
+body{
+    background-color:rgb(149, 210, 240);
+}
+
 .homepage{
+    display: flex;
+    flex-direction: column;
     background-color: steelblue;
+    border-radius: 15px;
 }
 .homepage div{
     background-color: azure;

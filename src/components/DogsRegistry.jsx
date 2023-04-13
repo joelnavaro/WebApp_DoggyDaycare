@@ -20,14 +20,8 @@ const DogsRegistry = (props)=>{
                     <button className="btn">Home</button>
                 </Link>
             </section>
-            <div className="dogscontainer">
-                All our beautiful friends!!
-                <DogsGrid data={props.data}/>
-            </div>
-
+            <DogsGrid data={props.data}/>
         </div>
-
-
     );
 }
 

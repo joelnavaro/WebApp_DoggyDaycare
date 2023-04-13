@@ -7,22 +7,27 @@ const DogsGrid = (props) =>{
 
     if(data != null){
         //it doesnt iterate through, better with a single card
-        /* const content = data[0].map( (dog, index)=>{
-            <div key={index}>
-                <img src={dog.img} alt={dog.chipNumber}/>
+        const content = data.map( (dog, index)=>(
+            <div className="dog" key={index}>
+                <img src={dog.img} alt="missing pic" />
+                <br />
+                <label>{dog.name}</label>
             </div>
-        } ); //prueba () en vex de {}
-        container.push(content); */
-        data.forEach( (dog, index) => {
+        ) );
+        container.push(content);
+        /* data.forEach( (dog, index) => {
             const img = <img src={dog.img} alt={dog.chipNumber} key={index}/>;
                 
             container.push(img);
-        });
+        }); */
     }
 
     return(
-        <div className="doggrid">
-            {container}
+        <div className="dogscontainer">
+            <h2>All our beautiful friends!!</h2>
+            <div className="doggrid">
+                {container}
+            </div>
         </div>
 
     );
