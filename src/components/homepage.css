@@ -1,0 +1,20 @@
+.homepage{
+    background-color: steelblue;
+}
+.homepage div{
+    background-color: azure;
+    border-radius: 15px;
+    margin: 10px
+}
+
+.homemenu{
+    border: 2px solid azure;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.homemenu button{
+    margin: 1px;
+}
+.dogcard img {
+    border-radius: 10;
+}

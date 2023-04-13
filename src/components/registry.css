@@ -1,0 +1,37 @@
+body{
+    background-color:rgb(7, 79, 115);
+}
+.registrycomp h1{
+    color: white;
+}
+.dogscontainer{
+    border: 3px solid azure;
+    border-radius: 10px;
+    background-color: rgb(5, 134, 204);
+}
+.doggrid{
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px;
+    padding: 10px;
+    gap: 5px;
+    margin-top: 20px;
+}
+
+.doggrid img{
+    width: 100px;
+    height: 100px;
+    object-fit:cover;
+    border: 2px solid white;
+    border-radius: 8px;
+}
+
+.registrymenu{
+    border: 2px solid azure;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.btn{
+    background-color: steelblue;
+    color: white;
+    margin: 1px;
+}

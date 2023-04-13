@@ -7,9 +7,9 @@ const DogCard = (props)=>{
     if (dog != null){
         //for(item in props.dog.owner){};
         return(
-            <div>
+            <div className="dogcard">
                 {/* nombre, sexo, presente, etc */}
-                <h2>{props.dog.name}</h2>
+                <h2>Meet our friend {props.dog.name} !!</h2>
                 <h2>{props.dog.id}</h2>
                 <img src={props.dog.img} alt={props.dog.chipNumber} />
                 <h2>{props.dog.breed}</h2>

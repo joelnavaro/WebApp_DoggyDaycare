@@ -1,16 +1,5 @@
-
-
-function getImages(array, container){
-
-    for(const item in array){
-        const img = <img src={item.img} alt={item.chipNumber}/>
-        container.push(img)
-
-        console.log("what: ",container.length);
-
-    };
-    return ;
-};
+import {useState} from "react";
+import './registry.css';
 
 const DogsGrid = (props) =>{
     const data = props.data;
@@ -22,23 +11,17 @@ const DogsGrid = (props) =>{
             <div key={index}>
                 <img src={dog.img} alt={dog.chipNumber}/>
             </div>
-        } );
+        } ); //prueba () en vex de {}
         container.push(content); */
-        data.forEach( dog => {
-            const img = <div>
-                <img src={dog.img} alt={dog.chipNumber}/>
-                </div>
-            container.push(img)
+        data.forEach( (dog, index) => {
+            const img = <img src={dog.img} alt={dog.chipNumber} key={index}/>;
+                
+            container.push(img);
         });
     }
-    
-
-    //const images = getImages(data, container);
-    console.log("inside component", data);
-
 
     return(
-        <div>
+        <div className="doggrid">
             {container}
         </div>
 

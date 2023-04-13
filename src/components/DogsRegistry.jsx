@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import DogsGrid from "./DogsGrid";
 
 
+
 const DogsRegistry = (props)=>{
     /* const [grid, setGrid] = useState(null);
 
@@ -12,16 +13,15 @@ const DogsRegistry = (props)=>{
     );  */
 
     return(
-        <div>
-            <h2>Registered Dogs</h2>
-            <section>
-                section All buttons back and so
+        <div className="registrycomp">
+            <h1>Registered Dogs</h1>
+            <section className="registrymenu">
                 <Link to='/'>
-                    <button>Home</button>
+                    <button className="btn">Home</button>
                 </Link>
             </section>
-            <div>
-                div All the dogs in miniature
+            <div className="dogscontainer">
+                All our beautiful friends!!
                 <DogsGrid data={props.data}/>
             </div>
 

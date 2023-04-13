@@ -18,7 +18,7 @@ async function fetchData(api, setSample, setData){
     const record = data.record;
 
     //console.log("Array with: ", record.length, "items");
-    const random = Math.floor(Math.random() * record.length);
+    const random = randomDog(record);
 
     setSample(record[random]);
     setData(record);
@@ -29,10 +29,16 @@ async function fetchData(api, setSample, setData){
         console.log(item.name)
     }); */
 }
+function randomDog(record){
+  const random = Math.floor(Math.random() * record.length);
+  return random;
+};
 
 
 function App() {
-  const [sample, setSample] = useState(null);
+  //for the HomePage component
+  const [sample, setSample] = useState([]);
+  //for the DogRegistry component
   const [data, setData] = useState(null);
 
   //const [dogs, setDogs] = useState(null);
