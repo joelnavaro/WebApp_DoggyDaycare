@@ -1,0 +1,31 @@
+.sections{
+    display: flex;
+    flex-direction: row;
+    background-color: skyblue;
+    border: 3px solid white;
+    border-radius: 15px;
+    padding: 10px;
+    gap: 10px;
+
+}
+.sections section{
+    background-color: steelblue;
+    border-radius: 15px;
+}
+
+.homemenu{
+    border: 2px solid azure;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.homemenu button{
+    background-color: steelblue;
+    color: white;
+    margin: 1px;
+}
+
+@media(max-width: 879px){
+    .sections{
+        flex-direction: column;
+    }
+}

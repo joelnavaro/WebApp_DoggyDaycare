@@ -5,6 +5,7 @@ import './App.css'
 import { Route, Routes } from 'react-router-dom'
 import HomePage from './components/HomePage'
 import DogsRegistry from './components/DogsRegistry'
+import DogRecord from './components/DogRecord'
 
 const apiURL = 'https://api.jsonbin.io/v3/b/6422b9c8c0e7653a0597d126';
 
@@ -51,9 +52,12 @@ function App() {
   return (
     <div className="App">
       <Routes>
-        <Route path='/' element={ <HomePage sample={sample}/> }/>
+        <Route path='/' element={ <HomePage sample={sample} data={data}/> }/>
         <Route path='/registry' element={ 
           <DogsRegistry data={data}/> }/>
+        <Route path='/dogrecord' element={<DogRecord data={data}/>}/> 
+        <Route path='/dogrecord/:id' element={<DogRecord data={data}/>}/> 
+        {/* route to owners contact list */}
       </Routes>
 
     </div>

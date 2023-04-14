@@ -4,11 +4,16 @@ body{
 
 .homepage{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     background-color: steelblue;
     border-radius: 15px;
 }
-.homepage div{
+.homepage section{
+    background-color: azure;
+    border-radius: 15px;
+    margin: 10px
+}
+.dogcard, img{
     background-color: azure;
     border-radius: 15px;
     margin: 10px
@@ -22,6 +27,9 @@ body{
 .homemenu button{
     margin: 1px;
 }
-.dogcard img {
-    border-radius: 10;
+
+@media(max-width:700px){
+    .homepage{
+        flex-direction: column;
+    }
 }

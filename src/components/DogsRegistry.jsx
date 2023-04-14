@@ -19,6 +19,9 @@ const DogsRegistry = (props)=>{
                 <Link to='/'>
                     <button className="btn">Home</button>
                 </Link>
+                <Link to='/dogrecord'>
+                    <button className="btn">Dog</button>
+                </Link>
             </section>
             <DogsGrid data={props.data}/>
         </div>

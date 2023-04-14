@@ -13,7 +13,7 @@
 .doggrid{
     display: flex;
     flex-flow: row wrap;
-    padding: 10px;
+    justify-content: center;
     gap: 10px;
     margin-top: 20px;
 }
@@ -38,4 +38,11 @@
     background-color: steelblue;
     color: white;
     margin: 1px;
+}
+
+@media(min-width:700px){
+    .doggrid img{
+        width: 200px;
+        height: 200px;
+    }
 }
