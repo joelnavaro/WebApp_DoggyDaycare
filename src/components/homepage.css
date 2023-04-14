@@ -8,20 +8,24 @@ body{
     background-color: steelblue;
     border-radius: 15px;
 }
+/* menu */
 .homepage section{
     background-color: azure;
     border-radius: 15px;
     margin: 10px
 }
+/* dogcard */
 .dogcard{
-    width: 500px;
-    height: 500px;
+    height: auto;
     background-color: azure;
     border-radius: 15px;
     margin: 10px
 }
 .dogcard img{
+    height: 350px;
+    border-radius: 5px;
     object-fit: cover;
+    background-position: center ;
 }
 
 .homemenu{
@@ -36,5 +40,8 @@ body{
 @media(max-width:700px){
     .homepage{
         flex-direction: column;
+    }
+    .dogcard img{
+        height: 500;
     }
 }

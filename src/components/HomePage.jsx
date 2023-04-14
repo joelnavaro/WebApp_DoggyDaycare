@@ -28,7 +28,6 @@ const HomePage = (props)=>{
         <div className="homepage">
             <div>
                 <h1>Doggy Daycare</h1>
-                
                 <section className="homemenu">
                     <Link to='/registry'>
                         <button>Dog Registry</button>
@@ -52,15 +51,6 @@ const HomePage = (props)=>{
     );
 }
 
-/* const data = async ()=>{
-    const response = await fetch(apiURL);
-    console.log("response: ", response);
-
-    const data = await response.json();
-    console.log("data: ", data);
-
-    setDogs(data.record);
-}; */
 
 export default HomePage;
 
