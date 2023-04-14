@@ -7,7 +7,7 @@ const DogsRegistry = (props)=>{
     
     return(
         <div className="registrycomp">
-            <h1>Registered Dogs</h1>
+            <h1>Registered Dogs.</h1>
             <section className="registrymenu">
                 <Link to='/'>
                     <button className="btn">Home</button>
