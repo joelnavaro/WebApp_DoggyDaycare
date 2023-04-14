@@ -9,7 +9,6 @@ const DogsGrid = (props) =>{
     const params = useParams();
 
     if(data != null){
-        //it doesnt iterate through, better with a single card
         const content = data.map( (dog, index)=>(
             <div className="dog" key={index}>
                 <img src={dog.img} alt="missing pic" onClick={()=>{navigate("/dogrecord/"+index)}} />
@@ -18,11 +17,6 @@ const DogsGrid = (props) =>{
             </div>
         ) );
         container.push(content);
-        /* data.forEach( (dog, index) => {
-            const img = <img src={dog.img} alt={dog.chipNumber} key={index}/>;
-                
-            container.push(img);
-        }); */
     }
 
     return(

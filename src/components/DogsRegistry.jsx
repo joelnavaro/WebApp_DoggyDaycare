@@ -4,14 +4,7 @@ import DogsGrid from "./DogsGrid";
 
 
 const DogsRegistry = (props)=>{
-    /* const [grid, setGrid] = useState(null);
-
-    const dogsGrid =  ()=>(
-        grid.forEach( item =>{
-            <DogsGrid dogs={item}>{item.name}</DogsGrid>
-        })
-    );  */
-
+    
     return(
         <div className="registrycomp">
             <h1>Registered Dogs</h1>

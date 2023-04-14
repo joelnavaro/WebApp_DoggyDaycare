@@ -17,9 +17,7 @@ const HomePage = (props)=>{
                 present.push(x);
             }
         }
-        //console.log("present in", present.length, typeof present.length);
     }
-    //console.log("present out", present.length);
     
     useEffect( ()=>{
         setDogs(present.length);

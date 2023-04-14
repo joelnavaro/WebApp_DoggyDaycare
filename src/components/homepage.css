@@ -13,10 +13,15 @@ body{
     border-radius: 15px;
     margin: 10px
 }
-.dogcard, img{
+.dogcard{
+    width: 500px;
+    height: 500px;
     background-color: azure;
     border-radius: 15px;
     margin: 10px
+}
+.dogcard img{
+    object-fit: cover;
 }
 
 .homemenu{

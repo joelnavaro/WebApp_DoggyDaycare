@@ -1,13 +1,9 @@
 import { Link, useParams } from "react-router-dom";
-import { useEffect, useState } from "react";
 import './dogrecord.css';
 
-
-//setDog, selected
 function getImg(data, selected){
 
     const imgSection = [];
-    
 
     const test = ()=>{
         if (selected != null){
@@ -17,10 +13,7 @@ function getImg(data, selected){
         }
     }
 
-    //console.log("selected: ", selected)
     if(data != null){
-        /* const dogImg = data[index].img;
-        const dogName = data[index].name; */
         const index = randomDog(data);
 
         const dogImg = data[test ? selected : index].img;
@@ -33,17 +26,10 @@ function getImg(data, selected){
 
         imgSection.push(img);
     }
-    console.log("image: ", imgSection.length)
-    /* const dog = {
-        img : dogImg,
-        name : dogName
-    } */
-
     return imgSection;
 
 };
 
-//setDetails, selected
 function getDtl(data, selected){
     const dtlSection = [];
     
@@ -57,13 +43,6 @@ function getDtl(data, selected){
 
     if(data != null){
         const index = randomDog(data);
-
-        /* const dogSex = data[index].sex;
-        const dogbreed = data[index].breed;
-        const present = data[index].present; 
-        const age = data[index].age;
-        const chipNumber= data[index].chipNumber;
-        const owner = data[index].owner.name; */
 
         const dogSex = data[test ? selected : index].sex;
         const dogbreed = data[test ? selected : index].breed;
@@ -94,7 +73,6 @@ function randomDog(record){
 };
 
 const DogRecord=(props)=>{
-    //const [dog, setDog] = useState([]);
     const data = props.data;
 
     const params = useParams();
@@ -105,31 +83,14 @@ const DogRecord=(props)=>{
             id = Number(params.id);
         };
     };
-    
-
-    /* useEffect (()=>{
-        if(data != null){
-            const currentDog = randomDog(data);
-            setDog(currentDog);
-        };
-        
-    }, []);  */
-
-    
-    //const id = Number(params.id);
 
     const imgSection = getImg(data, id);
     const dtlSection = getDtl(data, id);
         
-    
-
-    /* const imgSection = getImg(data);
-    const dtlSection = getDtl(data); */
-
 
     return(
         <div className="recordcomponent">
-
+            <h1>Registered Info.</h1>
             <section className="homemenu">
                 <Link to='/'>
                     <button className="btn">Home</button>
